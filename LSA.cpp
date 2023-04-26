@@ -172,7 +172,7 @@ ostream &operator<<(ostream &out, const Matrix<T> &m) {
 
 template<typename T>
 istream &operator>>(istream &in, Matrix<T> &m) {
-    int value;
+    T value;
     for (int i = 0; i < m.getSize()[0]; i++) {
         for (int j = 0; j < m.getSize()[1]; j++) {
             in >> value;
