@@ -172,7 +172,7 @@ ostream &operator<<(ostream &out, const Matrix<T> &m) {
 
 template<typename T>
 istream &operator>>(istream &in, Matrix<T> &m) {
-    T value;
+    int value;
     for (int i = 0; i < m.getSize()[0]; i++) {
         for (int j = 0; j < m.getSize()[1]; j++) {
             in >> value;
@@ -297,7 +297,7 @@ int main() {
     vector<double> A_val = vector<double>();
     Matrix<double> B = Matrix<double>(m, 1);
     for (int i = 0; i < m; ++i) {
-        int a, b;
+        double a, b;
         cin >> a >> b;
         A_val.push_back(a);
         B.set(i, 0, b);
